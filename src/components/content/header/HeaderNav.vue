@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" :class="{ mobileFixed: isFixed }">
     <div class="container">
       <div class="header-menu">
         <router-link to="/" class="logo-box">
@@ -23,11 +23,14 @@
           <i class="fas fa-bars font-aw icon-size"></i>
         </button>
         <div
-          class="menu col-xl-3 col-lg-3 col-md-7 col-sm-8 col-8"
+          class="menu col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5"
           :class="{ menuPosition: isClick }"
         >
           <div class="close-btn">
-            <button class="toggle-menu-btn" @click="toggleMenu(false)">
+            <button
+              class="toggle-menu-btn my-close-button"
+              @click="toggleMenu(false)"
+            >
               <i
                 style="color: white; padding-right: 80px"
                 class="fas fa-bars font-aw fa-times icon-size"
@@ -48,19 +51,37 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 export default {
   name: "headernav",
   setup() {
     const isClick = ref(false);
+    const isFixed = ref(false);
 
     const toggleMenu = (bool) => {
       isClick.value = bool;
     };
 
+    onMounted(() => {
+      window.addEventListener("scroll", headerScroll);
+    });
+
+    const headerScroll = () => {
+      const nowHeight = window.pageYOffset;
+      if (nowHeight >= 500) {
+        isFixed.value = true;
+        console.log("現在應該要fixed");
+      } else {
+        isFixed.value = false;
+        console.log("現在不用fixed");
+      }
+    };
+
     return {
       isClick,
+      isFixed,
       toggleMenu,
+      headerScroll,
     };
   },
 };
@@ -69,11 +90,16 @@ export default {
 <style lang="scss" scoped>
 $lerage: 992px;
 
+.mobileFixed {
+  position: fixed !important;
+  background-color: #222;
+}
 .header {
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: 999;
+  transition: .3s all linear;
 
   .header-menu {
     width: 100%;
@@ -115,11 +141,18 @@ $lerage: 992px;
   }
 }
 @media screen and (max-width: 992px) {
+  .mobileFixed {
+    position: fixed !important;
+    background-color: white;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%)
+
+  }
   .header {
     width: 100%;
     position: absolute;
-    top: 0;
-    z-index: 1;
+    top:0;
+    z-index: 999;
+    transition: .3s all linear;
 
     .header-menu {
       width: 100%;
@@ -131,8 +164,8 @@ $lerage: 992px;
         display: block;
 
         .logo {
-          width: 100px;
-          height: 100px;
+          width: 75px;
+          height: 75px;
         }
       }
       .for-web-menu {
@@ -145,6 +178,11 @@ $lerage: 992px;
         .icon-size {
           font-size: 28px;
         }
+      }
+      .my-close-button {
+        position: absolute;
+        top: 9px;
+        right: -40px;
       }
 
       .menu {
@@ -161,9 +199,10 @@ $lerage: 992px;
         overflow: hidden;
 
         .close-btn {
-          padding-top: 20px;
+          padding-top: 40px;
           display: flex;
           justify-content: flex-end;
+          position: relative;
         }
         .all-menu {
           padding-left: 40px;

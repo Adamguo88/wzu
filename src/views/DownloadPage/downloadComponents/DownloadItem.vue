@@ -16,7 +16,7 @@
             <a class="down-load-a" :href="item.Block_1_app">下載</a>
           </div>
           <div class="app-1-img">
-            <img class="app-img-style" :src="item.Block_1_img" alt="" />
+            <img class="app-img-style" v-lazy="item.Block_1_img" alt="" />
           </div>
         </div>
         <div
@@ -31,7 +31,7 @@
             <a class="down-load-a" :href="item.Block_2_app">下載</a>
           </div>
           <div class="app-1-img">
-            <img class="app-img-style" :src="item.Block_2_img" alt="" />
+            <img class="app-img-style" v-lazy="item.Block_2_img" alt="" />
           </div>
         </div>
       </div>
@@ -46,13 +46,13 @@
           </div>
           <div class="app-2-img col-xl-12 col-lg-12 col-md-12">
             <div class="col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" :src="item.Block_3_img_01" />
+              <img class="app-img-style" v-lazy="item.Block_3_img_01" />
             </div>
             <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" :src="item.Block_3_img_02" />
+              <img class="app-img-style" v-lazy="item.Block_3_img_02" />
             </div>
             <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" :src="item.Block_3_img_03" />
+              <img class="app-img-style" v-lazy="item.Block_3_img_03" />
             </div>
           </div>
         </div>
@@ -68,13 +68,13 @@
           </div>
           <div class="app-2-img col-xl-12 col-lg-12 col-md-12">
             <div class="col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" :src="item.Block_4_img_01" />
+              <img class="app-img-style" v-lazy="item.Block_4_img_01" />
             </div>
             <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" :src="item.Block_4_img_02" />
+              <img class="app-img-style" v-lazy="item.Block_4_img_02" />
             </div>
             <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" :src="item.Block_4_img_03" />
+              <img class="app-img-style" v-lazy="item.Block_4_img_03" />
             </div>
           </div>
         </div>

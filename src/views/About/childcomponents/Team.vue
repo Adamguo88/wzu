@@ -6,7 +6,7 @@
       class="team-introduction col-xl-3 col-lg-4 col-md-6 col-sm-12"
     >
       <div class="user-photo">
-        <img class="user-img" :src="item.photo" alt="" />
+        <img class="user-img" v-lazy="item.photo" :alt='item.name' />
       </div>
       <div class="user-text">
         <h5>{{ item.name }}</h5>
@@ -55,9 +55,9 @@ export default {
     }
 
     .user-text {
+      height: 300px;
       display: flex;
       align-items: center;
-      justify-content: center;
       flex-direction: column;
       overflow: hidden;
       background-color: #222;
@@ -66,6 +66,7 @@ export default {
       position: relative;
       z-index: 1;
       transition: all 0.2s linear;
+      border-radius: 10px;
     }
   }
   .team-introduction:hover > .user-photo > .user-img {

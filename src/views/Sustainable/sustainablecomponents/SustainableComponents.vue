@@ -6,7 +6,7 @@
           <router-link to="/downloadpage/:data" @click="downloadpage(3)">
             <img
               class="river-img"
-              src="../../../assets/sustainable/Sustainable-patting-1.jpg"
+              v-lazy="require('@/assets/sustainable/Sustainable-patting-1.jpg')"
               alt=""
             />
           </router-link>
@@ -17,7 +17,7 @@
           <router-link to="/downloadpage/:data" @click="downloadpage(4)">
             <img
               class="river-img"
-              src="../../../assets/sustainable/Sustainable-patting-2.jpg"
+              v-lazy="require('@/assets/sustainable/Sustainable-patting-2.jpg')"
               alt=""
           /></router-link>
         </div>
