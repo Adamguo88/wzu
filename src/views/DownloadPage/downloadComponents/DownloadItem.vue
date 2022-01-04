@@ -13,7 +13,9 @@
           <div class="app-text">
             <span class="down-load-span">01</span>
             <p class="down-load-p">{{ item.Block_1_text }}</p>
-            <a class="down-load-a" :href="item.Block_1_app">下載</a>
+            <a class="down-load-a" target="_black" :href="item.Block_1_app"
+              >下載</a
+            >
           </div>
           <div class="app-1-img">
             <img class="app-img-style" v-lazy="item.Block_1_img" alt="" />
@@ -28,7 +30,9 @@
             <p class="down-load-p">
               {{ item.Block_2_text }}
             </p>
-            <a class="down-load-a" :href="item.Block_2_app">下載</a>
+            <a class="down-load-a" target="_black" :href="item.Block_2_app"
+              >下載</a
+            >
           </div>
           <div class="app-1-img">
             <img class="app-img-style" v-lazy="item.Block_2_img" alt="" />
@@ -42,39 +46,19 @@
             <p class="down-load-p">
               {{ item.Block_3_text }}
             </p>
-            <a class="down-load-a" :href="item.Block_3_app">下載</a>
+            <a class="down-load-a" target="_black" :href="item.Block_3_app"
+              >下載</a
+            >
           </div>
           <div class="app-2-img col-xl-12 col-lg-12 col-md-12">
-            <div class="col-xl-4 col-lg-4 col-sm-4">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
               <img class="app-img-style" v-lazy="item.Block_3_img_01" />
             </div>
-            <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
+            <div class="app-1-img col-xl-4 col-lg-4 col-md-12 col-sm-12">
               <img class="app-img-style" v-lazy="item.Block_3_img_02" />
             </div>
-            <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
+            <div class="app-1-img col-xl-4 col-lg-4 col-md-12 col-sm-12">
               <img class="app-img-style" v-lazy="item.Block_3_img_03" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="download-app-2">
-        <div style="padding: 15px">
-          <div class="app-text col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <span class="down-load-span">04</span>
-            <p class="down-load-p">
-              {{ item.Block_4_text }}
-            </p>
-            <a class="down-load-a" :href="item.Block_4_app">下載</a>
-          </div>
-          <div class="app-2-img col-xl-12 col-lg-12 col-md-12">
-            <div class="col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" v-lazy="item.Block_4_img_01" />
-            </div>
-            <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" v-lazy="item.Block_4_img_02" />
-            </div>
-            <div class="app-1-img col-xl-4 col-lg-4 col-sm-4">
-              <img class="app-img-style" v-lazy="item.Block_4_img_03" />
             </div>
           </div>
         </div>
@@ -133,6 +117,7 @@ $sm: 576px;
         transition: all 0.3s ease-out;
       }
     }
+
     .app-1-img {
       width: 100%;
       display: block;
@@ -159,6 +144,11 @@ $sm: 576px;
     flex-direction: row;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 992px) {
+      .app-text {
+        align-items: center !important;
+      }
+    }
     .app-text {
       display: flex;
       align-items: flex-start;
@@ -193,6 +183,21 @@ $sm: 576px;
       .app-img-style {
         width: 100%;
         padding-right: 15px;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .app-2-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .app-img-style {
+          width: 100%;
+          padding: 15px;
+        }
       }
     }
     @media screen and (max-width: $sm) {
