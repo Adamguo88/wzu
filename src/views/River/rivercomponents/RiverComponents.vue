@@ -14,12 +14,13 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10">
         <div class="river-photo">
-          <router-link to="/downloadpage/:data" @click="downloadpage(2)">
+          <!-- <router-link to="/downloadpage/:data" @click="downloadpage(2)">
             <img
               class="river-img"
               v-lazy="require('@/assets/river/River-patting-2.jpg')"
               alt=""
-          /></router-link>
+          /></router-link> -->
+            <img class="river-img" v-lazy="require('@/assets/river/River-patting-2.jpg')" alt=""/>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ export default {
   },
   setup() {
     
-    const sliderCount = ref(["bg-1", "bg-2", "bg-3"]);
+    const sliderCount = ref(["bg-1", "bg-2", "bg-3","bg-4"]);
     const isAutoPlay = ref(true)
 
 
