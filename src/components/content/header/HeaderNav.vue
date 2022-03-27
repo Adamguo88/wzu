@@ -1,48 +1,43 @@
 <template>
   <div class="header" :class="{ mobileFixed: isFixed }">
     <div class="container">
-      <div class="header-menu">
-        <router-link to="/" class="logo-box">
-          <img class="logo" src="@/assets/logo/logo2.gif" alt="" />
-        </router-link>
-        <!-- 手機板 -->
-        <ul class="for-web-menu">
-          <li>
-            <router-link class="for-web-a" to="/about">關於我們</router-link>
-          </li>
-          <li>
-            <router-link class="for-web-a" to="/river">愛河繪本</router-link>
-          </li>
-          <li>
-            <router-link class="for-web-a" to="/sustainable"
-              >永續繪本</router-link
-            >
-          </li>
-        </ul>
-        <button class="toggle-menu-btn" @click="toggleMenu(true)">
-          <i class="fas fa-bars font-aw icon-size"></i>
-        </button>
-        <div
-          class="menu col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5"
-          :class="{ menuPosition: isClick }"
-        >
-          <div class="close-btn">
-            <button
-              class="toggle-menu-btn my-close-button"
-              @click="toggleMenu(false)"
-            >
-              <i
-                style="color: white; padding-right: 80px"
-                class="fas fa-bars font-aw fa-times icon-size"
-              ></i>
-            </button>
-          </div>
-          <div class="all-menu">
-            <router-link class="header-a" to="/about">關於我們</router-link>
-            <router-link class="header-a" to="/river">愛河繪本</router-link>
-            <router-link class="header-a" to="/sustainable"
-              >永續繪本</router-link
-            >
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-11 ma-auto">
+        <div class="header-menu">
+          <router-link to="/" class="logo-box">
+            <img class="logo" src="@/assets/logo/logo2.gif" alt />
+          </router-link>
+          <!-- 手機板 -->
+          <ul class="for-web-menu">
+            <li>
+              <router-link class="for-web-a" to="/about">關於我們</router-link>
+            </li>
+            <li>
+              <router-link class="for-web-a" to="/river">愛河繪本</router-link>
+            </li>
+            <li>
+              <router-link class="for-web-a" to="/sustainable">永續繪本</router-link>
+            </li>
+          </ul>
+          <button class="toggle-menu-btn" @click="toggleMenu(true)">
+            <i class="fas fa-bars font-aw icon-size"></i>
+          </button>
+          <div
+            class="menu col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5"
+            :class="{ menuPosition: isClick }"
+          >
+            <div class="close-btn">
+              <button class="toggle-menu-btn my-close-button" @click="toggleMenu(false)">
+                <i
+                  style="color: white; padding-right: 80px"
+                  class="fas fa-bars font-aw fa-times icon-size"
+                ></i>
+              </button>
+            </div>
+            <div class="all-menu">
+              <router-link class="header-a" to="/about">關於我們</router-link>
+              <router-link class="header-a" to="/river">愛河繪本</router-link>
+              <router-link class="header-a" to="/sustainable">永續繪本</router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -58,7 +53,7 @@ export default {
     const isClick = ref(false);
     const isFixed = ref(false);
 
-    const toggleMenu = (bool) => {
+    const toggleMenu = bool => {
       isClick.value = bool;
     };
 
@@ -81,9 +76,9 @@ export default {
       isClick,
       isFixed,
       toggleMenu,
-      headerScroll,
+      headerScroll
     };
-  },
+  }
 };
 </script>
 
@@ -99,7 +94,7 @@ $lerage: 992px;
   position: absolute;
   top: 0;
   z-index: 999;
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 
   .header-menu {
     width: 100%;
@@ -139,15 +134,14 @@ $lerage: 992px;
   .mobileFixed {
     position: fixed !important;
     background-color: white;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%)
-
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
   }
   .header {
     width: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     z-index: 999;
-    transition: .3s all linear;
+    transition: 0.3s all linear;
 
     .header-menu {
       width: 100%;

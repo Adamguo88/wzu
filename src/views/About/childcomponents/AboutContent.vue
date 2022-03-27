@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="col-xl-10 col-lg-10 col-sm-10 col-10 mx-auto">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-10 mx-auto">
       <div class="about-content">
         <div class="introduction-text">
           <div class="introduction-title">
