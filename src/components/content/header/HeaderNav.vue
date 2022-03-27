@@ -1,7 +1,7 @@
 <template>
   <div class="header" :class="{ mobileFixed: isFixed }">
     <div class="container">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-11 ma-auto">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-11 mx-auto">
         <div class="header-menu">
           <router-link to="/" class="logo-box">
             <img class="logo" src="@/assets/logo/logo2.gif" alt />
