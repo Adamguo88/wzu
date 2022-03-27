@@ -3,10 +3,10 @@
     <div
       v-for="(item, index) in teamdata"
       :key="index"
-      class="team-introduction col-xl-3 col-lg-4 col-md-6 col-sm-12"
+      class="team-introduction col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 mx-auto"
     >
       <div class="user-photo">
-        <img class="user-img" v-lazy="item.photo" :alt='item.name' />
+        <img class="user-img" v-lazy="item.photo" :alt="item.name" />
       </div>
       <div class="user-text">
         <h5>{{ item.name }}</h5>
@@ -24,9 +24,9 @@ export default {
     teamdata: {
       type: Object,
       default() {},
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 
@@ -55,7 +55,7 @@ export default {
     }
 
     .user-text {
-      height: 300px;
+      height: 320px;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -89,6 +89,90 @@ export default {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+
+    .team-introduction {
+      padding: 20px 15px;
+      transition: all 0.2s linear;
+
+      .user-text {
+        height: 285px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #222;
+        color: white;
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.2s linear;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    width: 100%;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .team-introduction {
+      padding: 20px 15px;
+      transition: all 0.2s linear;
+
+      .user-text {
+        height: 330px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #222;
+        color: white;
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.2s linear;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team {
+    width: 100%;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .team-introduction {
+      padding: 20px 15px;
+      transition: all 0.2s linear;
+
+      .user-text {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #222;
+        color: white;
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.2s linear;
+        border-radius: 10px;
+      }
+    }
   }
 }
 </style>

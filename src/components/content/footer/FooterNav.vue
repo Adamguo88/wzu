@@ -3,7 +3,7 @@
     <div class="container">
       <div class="d-flex align-items-center justify-content-center">
         <router-link to="/" class="footer-logo">
-          <img class="logo" src="@/assets/logo/logo1.png" alt="" />
+          <img class="logo" src="@/assets/logo/logo2.gif" alt="" />
         </router-link>
         <div
           @click="myLink('https://www.edu.tw/Default.aspx')"

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header-menu">
         <router-link to="/" class="logo-box">
-          <img class="logo" src="@/assets/logo/logo1.png" alt="" />
+          <img class="logo" src="@/assets/logo/logo2.gif" alt="" />
         </router-link>
         <!-- 手機板 -->
         <ul class="for-web-menu">
@@ -127,11 +127,6 @@ $lerage: 992px;
         padding: 20px 15px;
         transition: 0.2s all linear;
         color: white;
-      }
-      .for-web-a:hover {
-        text-decoration: none;
-        color: white;
-        border-bottom: 1px solid white;
       }
     }
     .toggle-menu-btn,
