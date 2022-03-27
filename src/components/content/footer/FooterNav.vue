@@ -82,7 +82,6 @@ $footerPhoto: 576px;
     height: 100px;
     margin: 0 20px;
     .logo {
-      width: 100px;
       height: 100px;
     }
   }
@@ -138,8 +137,7 @@ $footerPhoto: 576px;
       height: 100px;
       margin: 0 20px;
       .logo {
-        width: 50px;
-        height: 50px;
+        height: 75px;
       }
     }
     .foooter-menu {

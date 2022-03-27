@@ -106,7 +106,6 @@ $lerage: 992px;
       display: block;
 
       .logo {
-        width: 100px;
         height: 100px;
       }
     }
@@ -153,7 +152,6 @@ $lerage: 992px;
         display: block;
 
         .logo {
-          width: 75px;
           height: 75px;
         }
       }
