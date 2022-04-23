@@ -17,6 +17,9 @@
             <li>
               <router-link class="for-web-a" to="/sustainable">永續繪本</router-link>
             </li>
+             <li>
+              <router-link class="for-web-a" to="/video">團隊成果</router-link>
+            </li>
           </ul>
           <button class="toggle-menu-btn" @click="toggleMenu(true)">
             <i class="fas fa-bars font-aw icon-size"></i>
@@ -37,6 +40,7 @@
               <router-link class="header-a" to="/about">關於我們</router-link>
               <router-link class="header-a" to="/river">愛河繪本</router-link>
               <router-link class="header-a" to="/sustainable">永續繪本</router-link>
+              <router-link class="header-a" to="/video">團隊成果</router-link>
             </div>
           </div>
         </div>
@@ -65,10 +69,8 @@ export default {
       const nowHeight = window.pageYOffset;
       if (nowHeight >= 500) {
         isFixed.value = true;
-        console.log("現在應該要fixed");
       } else {
         isFixed.value = false;
-        console.log("現在不用fixed");
       }
     };
 

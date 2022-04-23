@@ -29,7 +29,11 @@ const routes = [
     path: "/downloadpage/:data",
     name: "downloadpage",
     component: () => import("../views/DownloadPage/DownloadPage"),
-  },
+  },{
+    path:"/video",
+    name:"video",
+    component: () => import("../views/Video/Video")
+  }
 ];
 
 const router = createRouter({
