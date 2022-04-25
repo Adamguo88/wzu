@@ -2,12 +2,12 @@
   <div class="container">
     <div class="videoItem">
       <div
-        class="col-xl-6 col-lg-10 col-sm-10 col-10"
+        class="col-xl-6 col-lg-10 col-sm-10 col-10 video-padding"
         v-for="item in videoData"
         :key="item.id"
       >
         <div class="video-title">{{ item.name }}</div>
-        <div class="test">
+        <div class="video-item">
           <iframe
             :width="broswerWidth"
             :height="broswerHeight"
@@ -28,10 +28,9 @@ import { reactive, ref } from "vue";
 export default {
   name: "VideoLink",
   setup() {
-    
     const broswerNow = ref(1920);
     const broswerWidthNow = document.body.offsetWidth;
-    broswerNow.value = broswerWidthNow
+    broswerNow.value = broswerWidthNow + 20;
     const broswerWidth = ref(560);
     const broswerHeight = ref(315);
 
@@ -72,16 +71,17 @@ export default {
       if (broswerNow.value > 1200) {
         broswerWidth.value = 560;
       } else if (broswerNow.value > 768) {
-        broswerWidth.value = 500;
+        broswerWidth.value = 560;
       } else if (broswerNow.value > 576) {
         broswerWidth.value = 500;
+        broswerHeight.value = 250;
       } else {
         broswerWidth.value = 320;
+        broswerHeight.value = 200;
       }
     };
 
     videoSize();
-
 
     return {
       videoData,
@@ -103,14 +103,19 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
 
-  .video-title {
-    font-weight: 600;
-    font-size: 18px;
-    padding-bottom: 15px;
-  }
-  .test {
-    width: 100%;
-    overflow: hidden;
+  .video-padding {
+    margin-top: 20px;
+    padding: 15px;
+
+    .video-title {
+      font-weight: 600;
+      font-size: 18px;
+      padding-bottom: 15px;
+    }
+    .video-item {
+      width: 100%;
+      overflow: hidden;
+    }
   }
 }
 
