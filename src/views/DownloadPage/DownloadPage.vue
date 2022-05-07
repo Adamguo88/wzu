@@ -38,13 +38,16 @@ export default {
       {
         id: 1,
         Block_1_text: "App下載",
-        Block_1_app: "https://drive.google.com/drive/folders/11cEOdiepAOL8BnCLYOlG-5cDO-4tgpVM",
+        Block_1_app:
+          "https://drive.google.com/drive/folders/11cEOdiepAOL8BnCLYOlG-5cDO-4tgpVM",
         Block_1_img: river_img.b_1_img,
         Block_2_text: "繪本下載",
-        Block_2_app: "https://drive.google.com/drive/folders/1N6KBJmPEWl8konbwG4U8jLZe8nk_P2Gq",
+        Block_2_app:
+          "https://drive.google.com/drive/folders/1N6KBJmPEWl8konbwG4U8jLZe8nk_P2Gq",
         Block_2_img: river_img.b_4_img_2,
         Block_3_text: "遊戲下載",
-        Block_3_app: "https://drive.google.com/drive/folders/1u6fXBKBTD1OkL9O7p5C8W_Gmqac-zd15",
+        Block_3_app:
+          "https://drive.google.com/drive/folders/1u6fXBKBTD1OkL9O7p5C8W_Gmqac-zd15",
         Block_3_img_01: river_img.b_3_img_1,
         Block_3_img_02: river_img.b_3_img_2,
         Block_3_img_03: river_img.b_3_img_3,
@@ -66,13 +69,16 @@ export default {
       {
         id: 3,
         Block_1_text: "App下載",
-        Block_1_app: "https://drive.google.com/drive/folders/1oRxPqbB-WCyggiFf2tRIEHbeWcBVcOLK",
+        Block_1_app:
+          "https://drive.google.com/drive/folders/1oRxPqbB-WCyggiFf2tRIEHbeWcBVcOLK",
         Block_1_img: s_img_1.b_1_img,
         Block_2_text: "繪本下載",
-        Block_2_app: "https://drive.google.com/drive/folders/1donfSTU3m2AJ2Z09CVZhDJe8D-P6Z7f7",
+        Block_2_app:
+          "https://drive.google.com/drive/folders/1donfSTU3m2AJ2Z09CVZhDJe8D-P6Z7f7",
         Block_2_img: s_img_1.b_2_img,
         Block_3_text: "遊戲下載",
-        Block_3_app: "https://drive.google.com/drive/folders/1fGYMxQofqgms0KakasIHpKtTKAYrmlDp",
+        Block_3_app:
+          "https://drive.google.com/drive/folders/1fGYMxQofqgms0KakasIHpKtTKAYrmlDp",
         Block_3_img_01: s_img_1.b_3_img_1,
         Block_3_img_02: s_img_1.b_3_img_2,
         Block_3_img_03: s_img_1.b_3_img_3,
@@ -89,7 +95,7 @@ export default {
         Block_3_app: "#",
         Block_3_img_01: s_img_2.b_3_img_1,
         Block_3_img_02: s_img_2.b_3_img_2,
-        Block_3_img_03: s_img_2.b_3_img_3
+        Block_3_img_03: s_img_2.b_3_img_3,
       },
     ]);
 

@@ -13,7 +13,13 @@
           <div class="app-text">
             <span class="down-load-span">01</span>
             <p class="down-load-p">{{ item.Block_1_text }}</p>
-            <a class="down-load-a" target="_black" :href="item.Block_1_app"
+            <a
+              class="down-load-a"
+              :class="[
+                item.id === (1 || 2) ? 'down-load-blue' : 'down-load-green',
+              ]"
+              target="_black"
+              :href="item.Block_1_app"
               >下載</a
             >
           </div>
@@ -30,7 +36,13 @@
             <p class="down-load-p">
               {{ item.Block_2_text }}
             </p>
-            <a class="down-load-a" target="_black" :href="item.Block_2_app"
+            <a
+              class="down-load-a"
+              :class="[
+                item.id === (1 || 2) ? 'down-load-blue' : 'down-load-green',
+              ]"
+              target="_black"
+              :href="item.Block_2_app"
               >下載</a
             >
           </div>
@@ -46,7 +58,13 @@
             <p class="down-load-p">
               {{ item.Block_3_text }}
             </p>
-            <a class="down-load-a" target="_black" :href="item.Block_3_app"
+            <a
+              class="down-load-a"
+              :class="[
+                item.id === (1 || 2) ? 'down-load-blue' : 'down-load-green',
+              ]"
+              target="_black"
+              :href="item.Block_3_app"
               >下載</a
             >
           </div>
@@ -116,6 +134,12 @@ $sm: 576px;
         padding: 18px 35px;
         transition: all 0.3s ease-out;
       }
+      .down-load-green {
+        background-color: #039552 !important;
+      }
+      .down-load-blue {
+        background-color: #3b9acf !important;
+      }
     }
 
     .app-1-img {
@@ -170,6 +194,12 @@ $sm: 576px;
         background-color: black;
         padding: 18px 35px;
         transition: all 0.3s ease-out;
+      }
+      .down-load-green {
+        background-color: #039552 !important;
+      }
+      .down-load-blue {
+        background-color: #3b9acf !important;
       }
     }
     .app-2-img {
