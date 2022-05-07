@@ -37,31 +37,36 @@ export default {
     const videoData = reactive([
       {
         id: 1,
+        name: "用影像記錄生命的價值-「身為大學生的我們能為社會做什麼？」",
+        Link: "https://www.youtube.com/embed/OMlZs57O6vM",
+      },
+      {
+        id: 2,
         name: "看見需要・千手扶學專業志工團隊形象影片",
         Link: "https://www.youtube.com/embed/RR6XNOmtwB8",
       },
       {
-        id: 2,
+        id: 3,
         name: "109年教育部USR HUB看見需要・千手扶學計畫學生專訪影片",
         Link: "https://www.youtube.com/embed/2G0-ATT2vCw",
       },
       {
-        id: 3,
+        id: 4,
         name: "111年教育部USR HUB看見需要・千手扶學計畫紀錄",
         Link: "https://www.youtube.com/embed/eotSSEDcdoQ",
       },
       {
-        id: 4,
+        id: 5,
         name: "看見生命的需要–「謝謝，讓我們有機會成為彼此的貴人。」",
         Link: "https://www.youtube.com/embed/0-rD75bLT_o",
       },
       {
-        id: 5,
+        id: 6,
         name: "2021藝術陪伴 扶學課輔在來義",
         Link: "https://www.youtube.com/embed/YwERCXyyLnw",
       },
       {
-        id: 6,
+        id: 7,
         name: "國小藝術創作與藝術陪伴（崎峰、楠西、新豐）",
         Link: "https://www.youtube.com/embed/2GNzsKsJ3pI",
       },
