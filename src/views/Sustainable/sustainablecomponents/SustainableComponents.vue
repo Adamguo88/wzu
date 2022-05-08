@@ -17,7 +17,7 @@
                 <img
                   class="river-img"
                   v-lazy="
-                    require('@/assets/sustainable/Sustainable-patting-1.jpg')
+                    require('@/assets/sustainable/Sustainable-patting-1.png')
                   "
                   alt=""
                 />
@@ -27,7 +27,7 @@
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10">
             <div class="river-photo">
               <div class="pc-book-title mb-3">
-                續環境 AR 繪本_和小愛同學一起迺愛河
+                氣候變遷 AR 繪本_旺仔的春夏秋冬
               </div>
               <div class="pc-book-intro mb-3">
                 簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字
@@ -60,7 +60,7 @@
                 <img
                   class="river-img"
                   v-lazy="
-                    require('@/assets/sustainable/Sustainable-patting-2.jpg')
+                    require('@/assets/sustainable/Sustainable-patting-2.png')
                   "
                   alt=""
                 />
@@ -70,7 +70,7 @@
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10">
             <div class="river-photo">
               <div class="pc-book-title mb-3">
-                環境保護 AR 繪本_和小博同學一起保護愛河
+                植物成長 AR 繪本_與小鳳探索植物奧妙
               </div>
               <div class="pc-book-intro mb-3">
                 簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字

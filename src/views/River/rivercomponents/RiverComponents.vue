@@ -15,7 +15,7 @@
             <router-link to="/downloadpage/:data" @click="downloadpage(1)">
               <img
                 class="river-img"
-                v-lazy="require('@/assets/river/River-patting-1.jpg')"
+                v-lazy="require('@/assets/river/River-patting-1.png')"
                 alt=""
               />
             </router-link>
@@ -24,7 +24,7 @@
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10">
           <div class="river-photo">
             <div class="pc-book-title mb-3">
-              續環境 AR 繪本_和小愛同學一起迺愛河
+              永續環境 AR 繪本_和小愛同學一起迺愛河
             </div>
             <div class="pc-book-intro mb-3">
               簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字
@@ -56,7 +56,7 @@
             <router-link to="/downloadpage/:data" @click="downloadpage(2)">
               <img
                 class="river-img"
-                v-lazy="require('@/assets/river/River-patting-1.jpg')"
+                v-lazy="require('@/assets/river/River-patting-2.png')"
                 alt=""
               />
             </router-link>
