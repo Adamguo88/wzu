@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="download-app-2">
+      <!-- <div class="download-app-2">
         <div style="padding: 15px">
           <div class="app-text col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <span class="down-load-span">03</span>
@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -148,6 +148,7 @@ $sm: 576px;
 
       .app-img-style {
         width: 100%;
+        border-radius: 15px;
       }
     }
 
@@ -159,6 +160,7 @@ $sm: 576px;
         .app-img-style {
           width: 100%;
           padding: 15px;
+          border-radius: 15px;
         }
       }
     }
@@ -213,6 +215,7 @@ $sm: 576px;
       .app-img-style {
         width: 100%;
         padding-right: 15px;
+        border-radius: 15px;
       }
     }
     @media screen and (max-width: 992px) {
@@ -227,6 +230,7 @@ $sm: 576px;
         .app-img-style {
           width: 100%;
           padding: 15px;
+          border-radius: 15px;
         }
       }
     }
@@ -250,6 +254,7 @@ $sm: 576px;
         .app-img-style {
           width: 100%;
           padding: 15px;
+          border-radius: 15px;
         }
       }
     }
