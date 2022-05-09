@@ -30,7 +30,7 @@
                 氣候變遷 AR 繪本_旺仔的春夏秋冬
               </div>
               <div class="pc-book-intro mb-3">
-                簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字
+                植物成長的生命歷程中，會經理哪些過程呢？可愛的旺仔會帶你們大家一起前往發掘植物的秘密，瞭解植物構造。事不宜遲一起來看吧！
               </div>
               <div class="into-btn-style">
                 <button class="down-load-btn-style btn">
@@ -73,7 +73,9 @@
                 植物成長 AR 繪本_與小鳳探索植物奧妙
               </div>
               <div class="pc-book-intro mb-3">
-                簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字
+                身為小小採訪員的小鳳來到了幸福農場，遇到了農場的主人-老伯伯。小鳳會向伯伯採訪什麼樣的問題呢？在這之間小鳳又會有哪些體驗呢？
+                <br />
+                趕快進入跟著小鳳一起探索植物奧妙吧！
               </div>
               <div class="into-btn-style">
                 <button class="down-load-btn-style btn">
@@ -177,6 +179,7 @@ export default {
     .river-img {
       display: block;
       width: 100%;
+      border-radius: 15px;
     }
 
     .pc-book-title {
@@ -230,6 +233,7 @@ export default {
       .river-img {
         width: 100%;
         display: block;
+        border-radius: 15px;
       }
     }
   }

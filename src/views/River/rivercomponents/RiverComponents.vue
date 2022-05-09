@@ -27,7 +27,7 @@
               永續環境 AR 繪本_和小愛同學一起迺愛河
             </div>
             <div class="pc-book-intro mb-3">
-              簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字
+              走在河邊的小愛，看著越來越髒的河面以及道路，他會怎麼做呢？又有那些因素造成河川變成髒兮兮的呢？讓我們一起看下去吧！
             </div>
             <div class="into-btn-style">
               <button class="down-load-btn-style btn">
@@ -68,7 +68,9 @@
               環境保護 AR 繪本_和小博同學一起保護愛河
             </div>
             <div class="pc-book-intro mb-3">
-              簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字簡介100字
+              神秘的小精靈看到小博亂丟垃圾後勃然大怒，他會帶著小博去看哪些事件呢？小博又會怎麼做呢？
+              <br />
+              我們跟著小精靈與小博一起探索愛河吧！
             </div>
             <div class="into-btn-style">
               <button class="down-load-btn-style btn">
@@ -171,6 +173,7 @@ export default {
     .river-img {
       display: block;
       width: 100%;
+      border-radius: 15px;
     }
 
     .pc-book-title {
@@ -224,6 +227,7 @@ export default {
       .river-img {
         width: 100%;
         display: block;
+        border-radius: 15px;
       }
     }
   }
